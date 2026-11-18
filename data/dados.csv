@@ -1,0 +1,15 @@
+id;categoria;descricao;setor;local;dia_abertura;status
+001;iluminacao;Poste apagado na esquina;Centro;Praça Central;2;concluida
+002;acessibilidade;Calçada sem rampa para cadeira de rodas;Centro;Rua das Palmeiras;3;em_analise
+003;limpeza;Acúmulo de lixo em terreno vazio;Norte;Terreno da Rua 7;4;concluida
+004;iluminacao;Lâmpada do poste piscando;Norte;Rua dos Ipês;5;aberta
+005;conservacao;Banco da praça quebrado;Centro;Praça Central;6;em_analise
+006;limpeza;Bueiro entupido com folhas;Sul;Avenida do Córrego;8;aberta
+007;acessibilidade;Piso tátil danificado;Centro;Ponto de ônibus da Avenida Principal;9;concluida
+008;iluminacao;Trecho escuro sem iluminação;Sul;Passarela do Córrego;11;em_analise
+009;conservacao;Brinquedo do parquinho solto;Norte;Parquinho da Rua 7;13;aberta
+010;limpeza;Entulho deixado na calçada;Sul;Rua das Acácias;15;em_analise
+011;acessibilidade;Faixa de pedestres apagada;Norte;Entrada da escola municipal;18;aberta
+012;iluminacao;Refletor da quadra queimado;Sul;Quadra Comunitária;21;aberta
+013;;Mato alto no canteiro;Centro;Canteiro da Avenida Principal;22;aberta
+015;limpeza;Lixeira pública quebrada;Centro;Praça Central;abc;resolvida
