@@ -21,7 +21,7 @@ Precisa apenas de Python 3 (não usa nenhuma biblioteca externa).
 
 ```bash
 git clone https:https://github.com/pietromaimone/projeto-dashboard
-python colonia.py
+python src/sistema.py
 ```
 
 ```bash
