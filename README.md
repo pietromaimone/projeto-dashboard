@@ -20,6 +20,11 @@ Painel comunitário, em modo texto, para registrar, organizar e acompanhar pedid
 Precisa apenas de Python 3 (não usa nenhuma biblioteca externa).
 
 ```bash
+git clone https:https://github.com/pietromaimone/projeto-dashboard
+python colonia.py
+```
+
+```bash
 python src/sistema.py          # menu interativo
 python src/sistema.py --demo   # roteiro automático
 ```
