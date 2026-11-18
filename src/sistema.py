@@ -1,20 +1,3 @@
-"""
-Neighborhood Action Dashboard - Painel Comunitário de Ocorrências
-Global Solution 2026.2 - FIAP (desafio CitizenTech)
-
-Comunidade simulada: Vila Esperança (bairro fictício), dividida nos
-setores Centro, Norte e Sul.
-
-O programa lê as ocorrências de data/dados.csv e o histórico de
-data/historico.csv, valida os registros e oferece um menu textual para
-listar, buscar, filtrar, cadastrar, atualizar status e ver indicadores.
-
-Como executar:
-    python src/sistema.py          -> menu interativo
-    python src/sistema.py --demo   -> roteiro automático de demonstração
-
-Usa apenas Python básico (sem bibliotecas externas).
-"""
 
 import csv
 import os
@@ -123,9 +106,9 @@ def titulo(texto):
     linha("=")
 
 
-# ---------------------------------------------------------------------------
+
 # VALIDAÇÃO
-# ---------------------------------------------------------------------------
+
 
 def validar_registro(reg):
     """Confere um registro (dicionário) e devolve uma lista de problemas.
@@ -158,7 +141,7 @@ def validar_registro(reg):
         problemas.append("setor desconhecido: '" + setor + "'")
 
     # 4) Dia de abertura: número entre 1 e o dia atual da simulação
-    #    Expressão booleana (documentada no README):
+    #    Expressão booleana
     #    dia_valido = texto.isdigit() AND 1 <= dia <= DIA_ATUAL
     dia_txt = reg.get("dia_abertura", "").strip()
     dia_valido = dia_txt.isdigit() and 1 <= int(dia_txt) <= DIA_ATUAL
@@ -185,9 +168,8 @@ def pode_mudar_status(atual, novo):
         return True, "Mudança permitida."
 
 
-# ---------------------------------------------------------------------------
 # CARGA DOS ARQUIVOS
-# ---------------------------------------------------------------------------
+
 
 def adicionar_ocorrencia(reg):
     """Coloca uma ocorrência já validada em todas as estruturas."""
@@ -244,9 +226,8 @@ def carregar_historico():
             indice[ev["id"]]["dia_conclusao"] = evento["dia"]
 
 
-# ---------------------------------------------------------------------------
 # EXIBIÇÃO
-# ---------------------------------------------------------------------------
+
 
 def mostrar_tabela(lista):
     if not lista:
@@ -281,9 +262,8 @@ def mostrar_detalhes(oc):
         print("Histórico .....: nenhuma atualização ainda")
 
 
-# ---------------------------------------------------------------------------
 # FUNCIONALIDADES DO MENU
-# ---------------------------------------------------------------------------
+
 
 def listar_todas():
     titulo("Todas as ocorrências")
@@ -596,9 +576,8 @@ def mostrar_ajuda():
     print("Use locais genéricos, como 'Praça Central' ou 'Rua das Palmeiras'.")
 
 
-# ---------------------------------------------------------------------------
-# ENTRADAS DO USUÁRIO (MENU)
-# ---------------------------------------------------------------------------
+
+# ENTRADAS DO USUÁRIO
 
 def perguntar(texto):
     try:
@@ -727,9 +706,9 @@ def menu():
             print("Opção inválida. Digite um número de 0 a 11.")
 
 
-# ---------------------------------------------------------------------------
-# ROTEIRO DE DEMONSTRAÇÃO (o mesmo exemplo do enunciado)
-# ---------------------------------------------------------------------------
+
+# ROTEIRO DE DEMONSTRAÇÃO 
+
 
 def demo():
     titulo("Demonstração automática")
