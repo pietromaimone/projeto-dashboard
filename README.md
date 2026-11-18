@@ -13,8 +13,6 @@ Painel comunitário, em modo texto, para registrar, organizar e acompanhar pedid
 | Integrante | RM |
 |---|---|
 | Pietro Maimone | RM _[preencher]_ |
-| _[nome]_ | RM _[preencher]_ |
-| _[nome]_ | RM _[preencher]_ |
 
 ---
 
