@@ -4,9 +4,8 @@ import os
 import sys
 from collections import deque
 
-# ---------------------------------------------------------------------------
 # CONFIGURAÇÃO E VALORES PADRONIZADOS
-# ---------------------------------------------------------------------------
+
 
 PASTA_BASE = os.path.dirname(os.path.abspath(__file__))
 ARQ_DADOS = os.path.join(PASTA_BASE, "..", "data", "dados.csv")
@@ -35,9 +34,9 @@ SETORES = ["Centro", "Norte", "Sul"]
 CAMPOS_OBRIGATORIOS = ["id", "categoria", "descricao", "setor", "local",
                        "dia_abertura", "status"]
 
-# ---------------------------------------------------------------------------
+
 # ESTRUTURAS DE DADOS DO SISTEMA
-# ---------------------------------------------------------------------------
+
 
 ocorrencias = []        # LISTA: todas as ocorrências válidas, em ordem de cadastro
 indice = {}             # DICIONÁRIO (tabela hash): id -> ocorrência
@@ -47,9 +46,8 @@ rejeitados = []         # registros que falharam na validação (com o motivo)
 ids_usados = set()      # todos os códigos já vistos (válidos ou rejeitados)
 
 
-# ---------------------------------------------------------------------------
 # FUNÇÕES AUXILIARES
-# ---------------------------------------------------------------------------
+
 
 def normalizar(texto):
     """Deixa o texto em minúsculas e sem acentos, para aceitar entradas como
