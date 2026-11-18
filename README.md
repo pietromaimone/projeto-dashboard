@@ -8,11 +8,11 @@ Painel comunitário, em modo texto, para registrar, organizar e acompanhar pedid
 
 ## 1. Equipe
 
-**Nome da equipe:** _[preencher]_
+**Nome da equipe:**
 
 | Integrante | RM |
 |---|---|
-| Pietro Maimone | RM _[preencher]_ |
+| Pietro Maimone |
 
 ---
 
