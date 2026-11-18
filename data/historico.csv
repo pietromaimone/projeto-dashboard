@@ -1,0 +1,11 @@
+id;dia;status_anterior;status_novo;observacao
+001;4;aberta;em_analise;Equipe do mutirão verificou o poste
+003;6;aberta;em_analise;Moradores confirmaram o local
+001;9;em_analise;concluida;Lâmpada trocada
+002;10;aberta;em_analise;Fotos da calçada anexadas ao registro
+007;11;aberta;em_analise;Associação de moradores avaliou o ponto
+005;12;aberta;em_analise;Medidas do banco registradas
+003;14;em_analise;concluida;Mutirão de limpeza realizado
+008;16;aberta;em_analise;Trecho mapeado à noite
+007;19;em_analise;concluida;Piso tátil recolocado
+010;20;aberta;em_analise;Volume de entulho estimado
