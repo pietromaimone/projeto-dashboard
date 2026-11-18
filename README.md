@@ -5,20 +5,9 @@
 Painel comunitário, em modo texto, para registrar, organizar e acompanhar pedidos de melhoria em um bairro: iluminação, acessibilidade, limpeza e conservação de espaços coletivos.
 
 ---
+## 1. O bairro, o problema e quem se beneficia
 
-## 1. Equipe
-
-**Nome da equipe:**
-
-| Integrante | RM |
-|---|---|
-| Pietro Maimone |
-
----
-
-## 2. O bairro, o problema e quem se beneficia
-
-**Vila Esperança** é um bairro fictício dividido em três setores: **Centro**, **Norte** e **Sul**. Lá tem praça, parquinho, quadra comunitária, escola municipal e uma passarela sobre o córrego.
+**Vila Esperança** é um bairro fictício dividido em três setores: **Centro**, **Norte** e **Sul**. Existe praça, parquinho, quadra comunitária, escola municipal e uma passarela sobre o córrego.
 
 **O problema:** os moradores percebem postes apagados, calçadas sem rampa, lixo acumulado e brinquedos quebrados, mas esses relatos ficam espalhados em grupos de mensagem e conversas. Ninguém sabe direito o que já foi visto, o que está parado e qual tipo de problema aparece mais.
 
@@ -26,13 +15,13 @@ Painel comunitário, em modo texto, para registrar, organizar e acompanhar pedid
 
 ---
 
-## 3. Como executar
+## 2. Como executar
 
 Precisa apenas de Python 3 (não usa nenhuma biblioteca externa).
 
 ```bash
 python src/sistema.py          # menu interativo
-python src/sistema.py --demo   # roteiro automático com o exemplo do enunciado
+python src/sistema.py --demo   # roteiro automático
 ```
 
 ### Estrutura do repositório
@@ -99,7 +88,7 @@ Caminho permitido: **Aberta → Em análise → Concluída** (também pode ir di
 
 ---
 
-## 4. Estruturas de dados e por que cada uma
+## 3. Estruturas de dados e por que cada uma
 
 | Estrutura | No código | Para que serve | Por que essa e não outra |
 |---|---|---|---|
@@ -115,7 +104,7 @@ Exemplo da fila funcionando: a opção 6 mostra a fila e "examina" a primeira (a
 
 ---
 
-## 5. Regras lógicas
+## 4. Regras lógicas
 
 ### Validação de um registro (`validar_registro`)
 
@@ -179,7 +168,7 @@ mostrar = (C = vazio OU categoria = C) E (S = vazio OU status = S)
 
 ---
 
-## 6. Indicadores
+## 5. Indicadores
 
 Todos calculados com laços e contas simples, só com as ocorrências válidas.
 
@@ -215,7 +204,7 @@ Todos calculados com laços e contas simples, só com as ocorrências válidas.
 
 ---
 
-## 7. Exemplo de uso
+## 6. Exemplo de uso
 
 Saída real de `python src/sistema.py --demo` (trechos):
 
@@ -289,7 +278,7 @@ TOTAL                      5           5           3      13   100.0
 
 ---
 
-## 8. Acessibilidade, inclusão e privacidade
+## 7. Acessibilidade, inclusão e privacidade
 
 - **Linguagem simples** em todas as mensagens, e o significado de cada status sempre disponível (opção 11).
 - **Acentos e maiúsculas opcionais** na digitação, para não travar quem digita rápido ou usa teclado sem acento.
@@ -301,21 +290,8 @@ TOTAL                      5           5           3      13   100.0
 
 ---
 
-## 9. Vídeo
+## 8. Vídeo
 
-Link: _[colar aqui o link do YouTube (Não Listado)]_
+Link: 
 
 ---
-
-## 10. Conclusões, limitações e aprendizados
-
-**Conclusões.** Com estruturas simples dá para transformar relatos soltos em informação útil: a lista guarda tudo, o dicionário acha rápido, a fila organiza a ordem de atendimento, a pilha mostra o que mudou por último e a matriz resume tudo numa tabela.
-
-**Limitações.**
-- Os dados são inventados e poucos (12 registros), então os indicadores não representam um bairro real.
-- As alterações feitas no menu ficam só na memória; ao fechar o programa, os arquivos voltam ao estado original.
-- O tempo é simulado em dias (1 a 30), sem datas reais.
-- Não há login: qualquer pessoa com acesso ao terminal pode alterar status.
-- Não há ligação com prefeitura ou outro órgão; o sistema só organiza a informação.
-
-**Aprendizados.** Escolher a estrutura certa simplifica o código: buscar por código no dicionário é uma linha, enquanto na lista seria um laço. Também ficou claro que validar os dados logo na entrada evita indicadores errados lá na frente, e que escrever as regras de status antes de programar evitou situações estranhas, como reabrir algo já concluído.
