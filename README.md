@@ -33,6 +33,7 @@ python src/sistema.py --demo   # roteiro automático
 
 ```
 ├── README.md
+├── asessts
 ├── src/
 │   └── sistema.py        # programa principal, comentado
 ├── data/
@@ -41,7 +42,7 @@ python src/sistema.py --demo   # roteiro automático
 └── docs/
     ├── relatorio.pdf     # relatório técnico
     ├── link_video.txt    # link do vídeo no YouTube
-    └── uso_ia.md         # como a IA foi usada
+    
 ```
 
 ### Formato dos dados
